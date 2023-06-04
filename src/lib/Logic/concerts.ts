@@ -1,0 +1,26 @@
+export type concert = {
+  nombreConcierto: string;
+  nombreArtista: string;
+  canciondestacada: string;
+  descripcion: string;
+  imagen: string;
+  direccion: string;
+  especificaciondireccion: string;
+  precioVip: number;
+  precioPlata: number;
+  precioGeneral: number;
+  precioOro: number;
+  boletosDisponibles: number;
+  diaConcierto: string;
+  diaInicio: string;
+  diaFinalizacion: string;
+  horaInicio: string;
+  horaFinalizacion: string;
+  boletosvipParaVender: number;
+  boletosPlataParaVender: number;
+  boletosGeneralParaVender: number;
+  boletosOroParaVender: number;
+  enPromocion: string;
+  descuento: number;
+  isSelected: boolean;
+};
