@@ -24,8 +24,9 @@
     //container.classList.remove("sign-up-mode");
   }
   //Arreglo con las UID de los administradores
-   const adminUid = [
-   "H0QDpxoMMWPD3WRSMvV9fGr1pEQ2"
+  const adminUid = [
+    "H0QDpxoMMWPD3WRSMvV9fGr1pEQ2",
+    "5BllpcGlUpZXaU7y7Ag8imB9Rz63",
   ];
 
   //Configuración del Registro de Usuario
@@ -80,8 +81,8 @@
         console.log($user);
       }
 
-      if(verifyEmail(usuario.correo)){
-      createConcert(usuario);
+      if (verifyEmail(usuario.correo)) {
+        createConcert(usuario);
       }
 
       navigate("/", { replace: true });
@@ -91,7 +92,6 @@
   };
 
   const createConcert = async (usuario) => {
-
     try {
       await new Promise((resolve) => setTimeout(resolve, 2000));
       await addDoc(collection(db, "Usuarios"), usuario);

@@ -32,7 +32,8 @@
 
   //Arreglo con las UID de los administradores
   const adminUid = [
-   "H0QDpxoMMWPD3WRSMvV9fGr1pEQ2"
+   "H0QDpxoMMWPD3WRSMvV9fGr1pEQ2",
+   "5BllpcGlUpZXaU7y7Ag8imB9Rz63"
   ];
 
   const cerrarSesion = async () => {
